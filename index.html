@@ -31,7 +31,6 @@
                             <option>Decimal</option>
                             <option>Binary</option>
                             <option>Hex</option>
-                            <option>Base64</option>
                             <option>Octal</option>
                         </select>
                     </div>
@@ -57,10 +56,37 @@
                 </div>
             </div>
         </div>
+        <div id="offset"></div>
 
-        <div class="container" id="workspace"></div>
+        <div id="workspace" class="container">
+            <div class="col-md-3" id="row1">
+            </div>
 
-        <div class="fab">
+            <div class="col-md-2">
+                <select class="form-control" id="selectOp">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                    <option>AND</option>
+                    <option>OR</option>
+                    <option>XOR</option>
+                    <option>NAND</option>
+                    <option>NOR</option>
+                    <option>NXOR</option>
+                </select>
+            </div>
+
+            <div class="col-md-3" id="row2">
+            </div >
+
+            <div class="col-md-1">=</div>
+
+            <div class="col-md-3" id="rowResult">
+            </div>
+        </div>
+
+        <div class="fab" id="fab">
             <a class="btn btn-warning btn-fab" data-toggle="modal" data-target="#modalAdd"><i class="material-icons">add</i></a>
         </div>
 
