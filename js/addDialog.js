@@ -3,6 +3,10 @@ $(function(){
         var type = $("#selectType").val();
 
         addField(type);
+
+        writeValue(0);
+        writeValue(1);
+        writeValue(2);
     });
 
     addField("Decimal");

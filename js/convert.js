@@ -84,11 +84,18 @@ function calculateValue(){
     }
 }
 
+function convertToString(number, base){
+    if(isNaN(number))
+        return "";
+    else
+        return number.toString(base);
+}
+
 function writeValue(row){
-    $("textarea[encodingType='Decimal'][row='"+row+"']").val(value[row].toString(10));
-    $("textarea[encodingType='Binary'][row='"+row+"']").val(value[row].toString(2));
-    $("textarea[encodingType='Hex'][row='"+row+"']").val(value[row].toString(16));
-    $("textarea[encodingType='Octal'][row='"+row+"']").val(value[row].toString(8));
+    $("textarea[encodingType='Decimal'][row='"+row+"']").val(convertToString(value[row], 10));
+    $("textarea[encodingType='Binary'][row='"+row+"']").val(convertToString(value[row], 2));
+    $("textarea[encodingType='Hex'][row='"+row+"']").val(convertToString(value[row], 16));
+    $("textarea[encodingType='Octal'][row='"+row+"']").val(convertToString(value[row], 8));
 
 
 
