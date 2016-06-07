@@ -1,5 +1,4 @@
 $(function() {
-
     $("#selectOp").change(function(){
         calculateValue();
 

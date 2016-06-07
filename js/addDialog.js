@@ -1,4 +1,6 @@
 $(function(){
+    $.material.init();
+
     $("#btnAdd").click(function(){
         var type = $("#selectType").val();
 
