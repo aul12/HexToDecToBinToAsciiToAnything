@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="form-group">
+        <label for="inputBinary">Binary</label>
+        <input type="number" class="form-control" id="inputBinary" placeholder="101001.101" step="any">
+    </div>
+    <hr>
+    <div class="form-group">
+        <label for="inputDecimal">Decimal</label>
+        <input type="number" class="form-control" id="inputDecimal" placeholder="37.68232" step="any">
+    </div>
+    <hr>
+    <form class="row">
+        <div class="col-xs-1">
+            <div class="checkbox">
+                <br>Negative
+                <label>
+                    <input type="checkbox" id="checkBoxSign">
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                Exponent
+                <input type="number" class="form-control" id="inputExp" placeholder="1000" data-simple>
+            </div>
+        </div>
+        <div class="col-xs-7">
+            <div class="form-group">
+                Significand
+                <input type="number" class="form-control" id="inputMant" placeholder="1.101001" step="any" data-simple>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="float/convert.js"></script>

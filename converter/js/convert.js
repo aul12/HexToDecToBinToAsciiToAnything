@@ -1,9 +1,7 @@
-$(function() {
-    $("#selectOp").change(function(){
-        calculateValue();
+$("#selectOp").change(function(){
+    calculateValue();
 
-        writeValue(2);
-    });
+    writeValue(2);
 });
 
 var value = new Array(3);

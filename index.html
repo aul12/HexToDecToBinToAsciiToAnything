@@ -53,42 +53,16 @@
                     <a class="navbar-brand">Converter</a>
                 </div>
                 <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" data-load="converter">Calculator</a></li>
+                        <li><a href="#" data-load="float">Float Calculator</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div id="offset"></div>
+        <!--<div id="offset"></div>-->
 
-        <div id="workspace" class="container">
-            <div class="col-md-3" id="row1">
-            </div>
-
-            <div class="col-md-2">
-                <select class="form-control" id="selectOp">
-                    <option>+</option>
-                    <option>-</option>
-                    <option>*</option>
-                    <option>/</option>
-                    <option>AND</option>
-                    <option>OR</option>
-                    <option>XOR</option>
-                    <option>NAND</option>
-                    <option>NOR</option>
-                    <option>NXOR</option>
-                </select>
-            </div>
-
-            <div class="col-md-3" id="row2">
-            </div >
-
-            <div class="col-md-1">=</div>
-
-            <div class="col-md-3" id="rowResult">
-            </div>
-        </div>
-
-        <div class="fab" id="fab">
-            <a class="btn btn-warning btn-fab" data-toggle="modal" data-target="#modalAdd"><i class="material-icons">add</i></a>
-        </div>
+        <div data-content></div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -96,7 +70,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
-        <script src="js/addDialog.js"></script>
-        <script src="js/convert.js"></script>
+        <script src="http://aul12.bplaced.de/cdn/asyncLoader/asyncLoader.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>

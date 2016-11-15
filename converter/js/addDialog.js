@@ -1,7 +1,16 @@
-$(function(){
+function updatePage(){
     $.material.init();
 
-    $("#btnAdd").click(function(){
+    /*$("#row1").html("");
+    $("#row2").html("");
+    $("#rowResult").html("");*/
+
+    value[0] = value[1] = value[2] = 0;
+
+    addField("Decimal");
+
+    $("#btnAdd").unbind("click").click(function(){
+        console.log("clicked");
         var type = $("#selectType").val();
 
         addField(type);
@@ -10,9 +19,9 @@ $(function(){
         writeValue(1);
         writeValue(2);
     });
+}
 
-    addField("Decimal");
-});
+
 
 function addField(type){
     $("#row1").append("<div class=\"jumbotron\">\n    <button type=\"button\" class=\"close\" onclick=\'removeDialog(this)\' aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n    <h2>"+type+"</h2>\n    <div class=\"form-group\">\n        <textarea class=\"form-control\" " +
