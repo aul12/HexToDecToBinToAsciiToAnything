@@ -79,6 +79,8 @@ function calculateValue(){
             value[2] = ~(value[1] ^ value[0]);
             break;
     }
+
+    value[2] &= (Math.pow(2, $("#inputWordSize").val())-1);
 }
 
 function convertToString(number, base){
