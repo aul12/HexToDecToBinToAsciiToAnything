@@ -4,6 +4,12 @@ $("#selectOp").change(function(){
     writeValue(2);
 });
 
+$("#inputWordSize").on("input", function(){
+    calculateValue();
+
+    writeValue(2);
+});
+
 var value = new Array(3);
 
 function asciiToDec(text){
